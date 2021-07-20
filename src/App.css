@@ -57,3 +57,50 @@ a{
           border-radius: 50px;
           box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+/* ---------------Table Style ------------------- */
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-bottom: 20px;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: center; 
+}
+
+.streetCol{
+  display: none;
+}
+
+.webCol{
+  display: none;
+}
+/* ---------------End of Table Style ------------ */
+
+/* -------------------Media query---------------- */
+
+/* For mid size screen */
+@media screen and (min-width: 600px){
+  .streetCol{
+    display: block;
+  }
+
+}
+/* For Large size screen */
+@media screen and (min-width: 960px){
+  .webCol{
+    display: block;
+  }
+}
+/* --------------end of media query---------------- */
