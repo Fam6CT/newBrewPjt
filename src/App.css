@@ -1,3 +1,59 @@
 .App {
   text-align: center;
 }
+
+:root{
+  --primary:#f8bc23;
+  --secondary: #080479;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  text-decoration: none;  
+}
+
+h1, p {
+  color:whitesmoke;
+}
+
+h2{
+  color: rgb(53, 49, 49);
+  padding-bottom: 15px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: var(--primary);
+  color: var(--secondary);
+
+}
+
+.nav-links{
+  width:40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.jumbotron{
+  background-image: url(https://cdn.pixabay.com/photo/2020/03/13/04/00/beer-4926861__480.jpg);
+          background-repeat: no-repeat, repeat;
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+          padding-top: 50px;
+          font-weight: bold;
+          margin: 60px 20px;
+          padding: 100px;
+          border-radius: 50px;
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
