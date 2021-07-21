@@ -59,7 +59,7 @@ const Details = ({ match }) => {
             <h4> Names of similar type breweries</h4>
             <br />
             {responseData.map((row) => (
-              <p>{row.name}</p>
+              <p key={row.id}>{row.name}</p>
             ))}
             ))
           </section>

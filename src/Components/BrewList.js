@@ -25,7 +25,7 @@ function BrewList(props) {
   };
 
   let rows = responseData.map((row) => (
-    <tr>
+    <tr key={row.id}>
       <td className="nameCol">{row.name}</td>
       <td className="streetCol">{row.street}</td>
       <td className="stateCol">{row.state}</td>
