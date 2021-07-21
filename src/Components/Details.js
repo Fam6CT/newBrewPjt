@@ -27,22 +27,7 @@ const Details = ({ match }) => {
           console.error(error);
           setShowElement(false);
         });
-    }
-
-    if (item.brewery_type) {
-      axios
-        .get(
-          `https://api.openbrewerydb.org/breweries?by_type=${item.brewery_type}`
-        )
-        .then((response) => {
-          setResponseData(response.data);
-          setShowElement(true);
-        })
-        .catch((error) => {
-          console.error(error);
-          setShowElement(false);
-        });
-    }
+    }   
   }, [match]);
 
   useEffect(() => {

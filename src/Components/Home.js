@@ -3,6 +3,18 @@ import { Jumbotron, Container } from "react-bootstrap";
 import BrewList from "./BrewList";
 
 function Home() {
+  const listItems = [
+    "micro",
+    "nano",
+    "regional",
+    "brewpub",
+    "large",
+    "planning",
+    "bar",
+    "contract",
+    "proprietor",
+    "closed",
+  ];
   return (
     <div>
       <Jumbotron fluid>
@@ -12,7 +24,7 @@ function Home() {
         </Container>
       </Jumbotron>
       <br />
-      <BrewList />
+      <BrewList listItems={listItems} />
     </div>
   );
 }

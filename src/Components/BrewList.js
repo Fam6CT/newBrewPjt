@@ -1,20 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
 
-function BrewList() {
-  const listItems = [
-    "micro",
-    "nano",
-    "regional",
-    "brewpub",
-    "large",
-    "planning",
-    "bar",
-    "contract",
-    "proprietor",
-    "closed",
-  ];
-  const displayItems = listItems.map((listItem) => listItem).sort();
+function BrewList(props) {
+  const displayItems = props.listItems.map((listItem) => listItem).sort();
   const [viewItem, setViewItem] = useState(displayItems[0]);
   const [responseData, setResponseData] = useState([]);
   const [showElement, setShowElement] = useState(false);
