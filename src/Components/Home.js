@@ -2,7 +2,7 @@ import React from "react";
 import { Jumbotron, Container } from "react-bootstrap";
 import BrewList from "./BrewList";
 
-function Homes() {
+function Home() {
   return (
     <div>
       <Jumbotron fluid>
@@ -17,4 +17,4 @@ function Homes() {
   );
 }
 
-export default Homes;
+export default Home;

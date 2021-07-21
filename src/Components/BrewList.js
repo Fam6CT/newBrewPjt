@@ -18,8 +18,6 @@ function BrewList() {
   const [viewItem, setViewItem] = useState(displayItems[0]);
   const [responseData, setResponseData] = useState([]);
   const [showElement, setShowElement] = useState(false);
-  if (responseData) console.log(responseData);
-
   const handleChange = (e) => {
     setViewItem(e.target.value);
   };
@@ -58,7 +56,7 @@ function BrewList() {
             className="form-control col-lg-3"
           >
             {displayItems.map((displayItem) => (
-              <option key={displayItem.id} value={displayItem}>
+              <option key={displayItem} value={displayItem}>
                 {displayItem}
               </option>
             ))}
